@@ -1,0 +1,66 @@
+var x,y;
+
+$("#gridForm").on ('submit',function()
+{
+    $("#gridTable").empty();
+    x=$(".height").val();
+    y=$(".width").val();
+    // console.log(x,y);
+    var str="";
+    for(var i=0;i<x;i++)
+    {
+       str+="<tr>"
+        for (var j=0;j<y;j++)
+        {           
+           str+="<td cellIndex= "+j+" rowIndex="+i+"> </td>"
+          // str+="<td> </td>"
+        }
+       str+="</tr>";
+      // console.log(str);
+    }
+    $("#gridTable").append(str);
+});
+
+
+$("#gridForm").submit(function(e) {
+    e.preventDefault();
+});
+
+$("#colorPicker").on('input',function(){
+    var c=$("#colorPicker").val();
+    $("#gridTable td").on("click",function(){
+        //$("#gridTable").css("background-color",c);     
+       // $("#gridTable td").click(function() { 
+            //var column_num = parseInt( $(this).attr("cellindex") ) ;
+            // var row_num = parseInt( $(this).attr("rowindex") );//.index() )+1;
+             // console.log(row_num, column_num);
+            // console.log(row_num);
+            $(this).css("background-color",c);
+
+        })
+    })    
+//})
+;
+
+/*
+$("td").click(function(){
+    //var mycolumn = $(this).parent().children().index(this);
+    var mycolumn=$(this).attr(cellindex).val();
+    //var myrow = $(this).parent().parent().children().index(this.parentNode);
+    console.log( mycolumn);
+})
+
+
+$(document).ready(function(){
+    $("#gridTable td").click(function() {     
+ 
+        var column_num = parseInt( $(this).attr(cellindex).val() ) ;
+        var row_num = parseInt( $(this).parent().index() )+1;    
+ 
+       // $("#result").html( "Row_num =" + row_num + "  ,  Rolumn_num ="+ column_num );   
+       console.log(column_num);
+       console.log(row_num);
+    });
+});
+
+*/
