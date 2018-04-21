@@ -16,18 +16,13 @@ $("#gridForm").on ('submit',function()
        str+="</tr>";    
     }
     $("#gridTable").append(str);
+    $("#gridTable td").on("click",function(){
+        var c=$("#colorPicker").val();
+        $(this).css("background-color",c);
+    })
 });
 
 
 $("#gridForm").submit(function(e) {
     e.preventDefault();
 });
-
-$("#colorPicker").on('input',function(){
-    var c=$("#colorPicker").val();
-    $("#gridTable td").on("click",function(){
-            $(this).css("background-color",c);
-
-        })
-    })    
-;
