@@ -5,7 +5,7 @@
 
 A single-page web app that allows users to draw pixel art on a customizable canvas! 
 
-Take this for a spin at [https://anushreebagchi.github.io/Analog-Clock-JS-30-Challenge/](https://anushreebagchi.github.io/Analog-Clock-JS-30-Challenge/)
+Take this for a spin at [https://anushreebagchi.github.io/Pixel-Art-Maker/](https://anushreebagchi.github.io/Pixel-Art-Maker/)
 
 
 ![alt text](https://media.giphy.com/media/2A67Wl9fBmhm9Unmrv/giphy.gif "Image of the project")
