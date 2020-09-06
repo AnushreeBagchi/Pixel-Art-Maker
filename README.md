@@ -5,10 +5,9 @@
 
 A single-page web app that allows users to draw pixel art on a customizable canvas! 
 
-Take this for a spin at [https://anushreebagchi.github.io/Pixel-Art-Maker/](https://anushreebagchi.github.io/Pixel-Art-Maker/)
+Take this for a spin at [https://anushree.tech/Pixel-Art-Maker/](https://anushree.tech/Pixel-Art-Maker/)
 
-
-![alt text](https://media.giphy.com/media/2A67Wl9fBmhm9Unmrv/giphy.gif "Image of the project")
+![alt text](https://media.giphy.com/media/hPr27zpysQKHDAychz/giphy.gif "Image of the project")
 
 Installation: Clone or download this repo and simply open the index.html file and enjoy!
 
